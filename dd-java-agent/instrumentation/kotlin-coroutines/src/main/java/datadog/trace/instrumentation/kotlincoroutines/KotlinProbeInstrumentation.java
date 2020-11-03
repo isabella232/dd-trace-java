@@ -183,8 +183,7 @@ public class KotlinProbeInstrumentation extends Instrumenter.Default {
     }
 
     public void tracingSuspend() {
-      continuation = scope.capture();
-      scope = continuation.activate();
+      continuation.cancel();
     }
 
     public void tracingResume() {
