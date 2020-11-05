@@ -3,7 +3,6 @@ muzzle {
     group = "io.reactivex.rxjava2"
     module = "rxjava"
     versions = "[2.0.0,)"
-    assertInverse = true
   }
 }
 
@@ -22,5 +21,5 @@ dependencies {
   compileOnly group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.0.0'
 
   testCompile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.0.0'
-  latestDepTestCompile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '3.+'
+  latestDepTestCompile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '+'
 }
